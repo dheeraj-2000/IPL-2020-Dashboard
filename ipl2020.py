@@ -359,9 +359,11 @@ if st.sidebar.checkbox("Show IPL 2020 scheduled matches", False):
     # st.header("IPL 2020 Scheduled Matches")
     st.markdown("<h2 style='text-align: center; color: #BD08D3;'><strong><u>All Scheduled matches of IPL 2020</u></strong></h2>", unsafe_allow_html=True)
 
-    st.markdown("You can expand the view for better visibility of Time table")
     # st.header("Bowling Stats of top Players")
     all_match = st.slider("Adjust the slider if you want to check more Scheduled Matches?", 20, 60)
+    st.markdown("<h2 style='text-align: center;'><i>You can view in fullscreen for better visibility of Schedule</i></h2>", unsafe_allow_html=True)
+
+    # st.markdown("You can expand the view for better visibility of Time table")
     image = pd.read_csv('ipl_schedule.csv')
     # st.image(image, use_column_width=True)
     imag= image[['Match No', 'Match Center', 'Date', 'Day', 'Time India (IST)', 'Venuue']]
