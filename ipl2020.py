@@ -361,7 +361,7 @@ if st.sidebar.checkbox("Show IPL 2020 scheduled matches", False):
 
     st.markdown("You can expand the view for better visibility of Time table")
     # st.header("Bowling Stats of top Players")
-    all_match = st.sidebar.slider("Adjust the slider if you want to check more Scheduled Matches?", 20, 60)
+    all_match = st.slider("Adjust the slider if you want to check more Scheduled Matches?", 20, 60)
     image = pd.read_csv('ipl_schedule.csv')
     # st.image(image, use_column_width=True)
     imag= image[['Match No', 'Match Center', 'Date', 'Day', 'Time India (IST)', 'Venuue']]
