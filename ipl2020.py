@@ -2,6 +2,8 @@
 #                   (C) Dheeraj Chaudhary
 # -----------------------------------------------------------
 
+
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -23,7 +25,6 @@ def giphy_path():
 path = giphy_path()
 
 points_table_data_url = 'https://www.iplt20.com/points-table/2020'
-# most_run_data_url = 'https://www.iplt20.com/stats/2020/most-runs'
 html = requests.get(points_table_data_url).content
 df_list_points_table = pd.read_html(html)
 df_points_table = df_list_points_table[-1]
@@ -31,7 +32,6 @@ df_points_table = df_list_points_table[-1]
 # df = pd.DataFrame(df)
 
 
-# st.title("IPL 2020 Dashboard")
 st.markdown("<h1 style='text-align: center; color: #9C021B;'><strong>🏏 <u>IPL 2020 Dashboard</u> 🏏</strong></h1>", unsafe_allow_html=True)
 st.markdown("_________________________________________________________________________________")
 # st.markdown("<h4 style='text-align: center; color: #9C021B;'><hr></h4>", unsafe_allow_html=True)
