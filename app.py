@@ -5,7 +5,7 @@ from sodapy import Socrata
 import pydeck as pdk
 import plotly.express as px
 import requests
-from IPython.display import Image
+# from IPython.display import Image
 
 
 with open("style.css") as f:
@@ -395,11 +395,11 @@ if favourite_team == 'Chennai Super Kings (CSK)':
     st.markdown("&nbsp")
     # st.markdown("&nbsp")
     # st.header("Chennai Super Kings full Schedule of Matches")
-    st.markdown("<h2 style='text-align: center; color: #E5EF1A;'><strong><u>Chennai Super Kings full Schedule of Matches</strong></h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center; color: #DBB000;'><strong><u>Chennai Super Kings full Schedule of Matches</strong></h2>", unsafe_allow_html=True)
 
     st.table(csk.assign(hack='').set_index('hack'))
     # st.markdown("_________________________*****___________________________")
-    st.markdown("<h2 style='text-align: center; color: #E5EF1A;'><strong><u>_____________________*****_____________________</strong></h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center; color: #DBB000;'><strong><u>_____________________*****_____________________</strong></h2>", unsafe_allow_html=True)
 
 
 
